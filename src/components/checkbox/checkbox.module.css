@@ -1,0 +1,44 @@
+.label {
+  position: relative;
+  padding-left: 45px;
+}
+
+.label-text {
+  font-size: 16px;
+}
+
+/* Checkbox Stuff */
+
+.checkbox {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  appearance: none;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+}
+
+/* Interactions */
+
+.checkbox:hover::before,
+.checkbox:focus::before {
+  border: 1px solid red;
+}
+
+.checkbox:active::before {
+  border: 1px solid green;
+}
+
+.checkbox:hover ~ .label-text,
+.checkbox:focus ~ .label-text {
+  color: red;
+}
