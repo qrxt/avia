@@ -3,6 +3,7 @@ import cn from 'classnames';
 
 import Header from '@components/header';
 import Filter from '@components/filter';
+import Sort from '@components/sort';
 import styles from './app.module.css';
 
 const App = () => (
@@ -14,8 +15,9 @@ const App = () => (
 
           <div className={styles.search}>
             <Filter />
-            {/* Sort */}
+            <Sort />
             {/* Tickets */}
+            <div>some tickets</div>
           </div>
         </div>
       </div>

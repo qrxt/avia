@@ -4,15 +4,21 @@ import PropTypes from 'prop-types';
 import styles from './checkbox.module.css';
 
 const Checkbox = (props) => {
-  const { labelText, checked, name } = props;
+  const {
+    labelText,
+    checked,
+    name,
+    id,
+  } = props;
 
   return (
-    <label className={styles.label} htmlFor={name}>
+    <label className={styles.label} htmlFor={id}>
       <input
         className={styles.checkbox}
         type="checkbox"
-        checked={checked}
+        defaultChecked={checked}
         name={name}
+        id={id}
       />
 
       <span className={styles.['label-text']}>
@@ -31,6 +37,7 @@ Checkbox.propTypes = {
   labelText: PropTypes.string,
   checked: PropTypes.bool,
   name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Checkbox;

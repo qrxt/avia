@@ -14,8 +14,17 @@ const Filter = () => (
       <ul className={styles.checkboxes}>
         <li className={styles.checkbox}>
           <Checkbox
+            labelText="Все"
+            name="transfers-all"
+            id="transfers-all"
+          />
+        </li>
+
+        <li className={styles.checkbox}>
+          <Checkbox
             labelText="Без пересадок"
             name="transfers-without"
+            id="transfers-without"
             checked
           />
         </li>
@@ -24,6 +33,8 @@ const Filter = () => (
           <Checkbox
             labelText="1 пересадка"
             name="transfers-one"
+            id="transfers-one"
+            checked
           />
         </li>
 
@@ -31,6 +42,8 @@ const Filter = () => (
           <Checkbox
             labelText="2 пересадки"
             name="transfers-two"
+            id="transfers-two"
+            checked
           />
         </li>
 
@@ -38,6 +51,7 @@ const Filter = () => (
           <Checkbox
             labelText="3 пересадки"
             name="transfers-three"
+            id="transfers-three"
           />
         </li>
       </ul>
