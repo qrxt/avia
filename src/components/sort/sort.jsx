@@ -1,24 +1,18 @@
 import React from 'react';
-import cn from 'classnames';
 
+import Switch from '@components/switch';
 import styles from './sort.module.css';
 
 const Sort = () => (
   <div className={styles.sort}>
     <form>
-      <button
-        className={cn(styles.btn, styles['btn-active'])}
-        type="button"
-      >
+      <Switch className={styles.switch} active>
         Самый дешевый
-      </button>
+      </Switch>
 
-      <button
-        className={cn(styles.btn)}
-        type="button"
-      >
+      <Switch className={styles.switch}>
         Самый быстрый
-      </button>
+      </Switch>
     </form>
   </div>
 );

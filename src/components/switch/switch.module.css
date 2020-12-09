@@ -1,0 +1,45 @@
+.switch {
+  padding: 15px 25px;
+  background-color: white;
+  border: 1px solid lightgray;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.switch:first-child {
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.switch:last-child {
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* States */
+
+.switch.active {
+  border-top: 1px solid lightblue;
+  border-right: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  background-color: lightblue;
+  border-color: lightblue;
+  color: #ffffff;
+}
+
+.switch:hover,
+.switch:focus {
+
+}
