@@ -7,6 +7,8 @@ import styles from './switch.module.css';
 const Switch = (props) => {
   const { className, active, children } = props;
 
+  console.log(active, typeof active);
+
   return (
     <button
       className={cn(

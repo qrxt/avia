@@ -1,0 +1,38 @@
+.ticket {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.94fr;
+  grid-template-areas:
+    "price . logo"
+    "deps deps deps"; /* departures */
+  align-items: center;
+  gap: 20px 10px;
+  padding: 20px;
+}
+
+.price {
+  grid-area: price;
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #2196f3;
+}
+
+.logo {
+  grid-area: logo;
+  width: 110px;
+  height: 36px;
+}
+
+.departures {
+  grid-area: deps;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.departure {
+  display: grid;
+  grid-template-areas:
+    "schedule time-spent transfers";
+}

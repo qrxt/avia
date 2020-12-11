@@ -1,7 +1,7 @@
 .switch {
-  padding: 15px 25px;
+  padding: 16px 25px 15px;
   background-color: white;
-  border: 1px solid lightgray;
+  border: 1px solid #dfe5ec;
   text-align: center;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 12px;
@@ -13,17 +13,17 @@
 }
 
 .switch:first-child {
-  border-top: 1px solid lightgray;
-  border-left: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid #dfe5ec;
+  border-left: 1px solid #dfe5ec;
+  border-bottom: 1px solid #dfe5ec;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 .switch:last-child {
-  border-top: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid #dfe5ec;
+  border-right: 1px solid #dfe5ec;
+  border-bottom: 1px solid #dfe5ec;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -31,11 +31,11 @@
 /* States */
 
 .switch.active {
-  border-top: 1px solid lightblue;
-  border-right: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
-  background-color: lightblue;
-  border-color: lightblue;
+  border-top: 1px solid #2196f3;
+  border-right: 1px solid #2196f3;
+  border-bottom: 1px solid #2196f3;
+  background-color: #2196f3;
+  border-color: #2196f3;
   color: #ffffff;
 }
 
